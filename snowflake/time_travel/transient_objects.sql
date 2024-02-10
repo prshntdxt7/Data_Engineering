@@ -1,0 +1,34 @@
+CREATE OR REPLACE TRANSIENT DATABASE DEVELOPMENT;
+SHOW DATABASES;
+
+DESCRIBE DATABASE DEVELOPMENT;
+USE DATABASE DEVELOPMENT;
+
+CREATE OR REPLACE SCHEMA DEV_SCHEMA;
+SHOW SCHEMAS;
+CREATE OR REPLACE TABLE MY_TABLE(id NUMBER, name VARCHAR);
+SHOW TABLES;
+--------------------------
+DROP DATABASE DEVELOPMENT;
+--------------------------
+
+--Permanent tables
+-------------------
+CREATE OR REPLACE DATABASE DEVELOPMENT;
+CREATE OR REPLACE SCHEMA DEV_SCHEMA;
+SHOW SCHEMAS;
+CREATE OR REPLACE TABLE MY_TABLE(id NUMBER, name VARCHAR);
+SHOW TABLES;   -- retention-time by defailt is 1 day, but can go upto 90 days for permanent tables, however for transient tables, we 
+-- can't increase the retention-time.
+
+
+
+-- Temporary tables
+---------------------
+CREATE OR REPLACE TEMPORARY TABLE MY_TEMP_TABLE(id NUMBER, name VARCHAR);
+INSERT INTO MY_TEMP_TABLE(id, name) VALUES (1, 'XYZ');
+
+SELECT * FROM MY_TEMP_TABLE;
+
+
+
