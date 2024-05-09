@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_ooh",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_db_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "address_table_data_adf_de_loads"
+		}
+	}
+}

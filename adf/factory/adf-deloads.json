@@ -1,0 +1,9 @@
+{
+	"name": "adf-deloads",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2618fd74-e685-4b1b-8978-c309d944e468",
+		"tenantId": "84f1e4ea-8554-43e1-8709-f0b8589ea118"
+	}
+}
