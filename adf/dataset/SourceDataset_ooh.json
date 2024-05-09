@@ -1,0 +1,19 @@
+{
+	"name": "SourceDataset_ooh",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "deloadsadls_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "address_table_data",
+				"fileSystem": "exports"
+			}
+		},
+		"schema": {}
+	}
+}
