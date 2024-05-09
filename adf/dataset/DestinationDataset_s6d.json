@@ -1,0 +1,20 @@
+{
+	"name": "DestinationDataset_s6d",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "deloadsadls_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "address_table_data",
+				"fileSystem": "exports"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
