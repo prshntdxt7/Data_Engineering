@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_ooh",
+				"name": "load_to_sqldb",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
